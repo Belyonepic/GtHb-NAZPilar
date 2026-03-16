@@ -18,7 +18,3 @@ span:hover .sub-name {
   opacity: 1;
   width: 200px;
 }
-span:not(:hover) {
-    opacity: 0;
-    width: 0;
-}
