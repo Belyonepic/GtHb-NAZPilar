@@ -1,0 +1,24 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+.name {
+    color: #8dc45c;
+}
+.sub-name {
+    opacity: 0%;
+    width: 0px;
+    display: block;
+    overflow: hidden;
+    transition: opacity 2s ease, width 3s ease;
+}
+span:hover .sub-name {
+  opacity: 1;
+  width: 200px;
+}
+span:not(:hover) {
+    opacity: 0;
+    width: 0;
+}
