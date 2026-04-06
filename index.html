@@ -2,24 +2,28 @@
 <html>
   <head>
     <title>Main Page</title>
-    <link rel="stylesheet" href="web2.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
       <header>
-        <div class="profile-image">
-        <img src="pic2.jpg" alt="a picture of me">
-        </div>
-        <h1 class="title">Halo, Nama saya <span class="name">Nabiil <span class='sub-name'>Alrilo Zhafran Tarigan</span></span></h1>
+        <h1 class="main-title">My Portofolio</h1>
+        <img class='profile-picture' src="pic2.jpg" alt="a picture of me">
+        <h1 class="title">Hello, my name is <span class="name">Nabiil <span class='sub-name'>Alrilo Zhafran Tarigan</span></span></h1>
       </header>
       
       <p id="currentTime"></p>
-      <script src="web3.js"></script>
+      <script src="script.js"></script>
 
       <nav>
-        <h2>My Projects</h2>
+        <h2 class="main-page-project">My Projects</h2>
         <ul class="main-page-nav">
-          <li><a href="biologi-geografi.html">Biologi - Geografi</a></li>
-          <li><a href="sejarah.html">Sejarah</a></li>
+          <ul class="term-3-nav">
+            <li><a href="biologi-geografi.html">Biologi - Geografi</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+          </ul>
+          <ul>
+            <li>test</li>
+          </ul>
         </ul>
       </nav>
   </body>
