@@ -5,9 +5,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <header>
+      <div class="top-bar">
         <h1 class="main-title">My Portofolio</h1>
-        <img class='profile-picture' src="pic2.jpg" alt="a picture of me">
+        <div class="top-bar-nav">
+          <ul class="top-bar-ul">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#main-page-project">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <header id="profile">
+        <img class='profile-picture' src="Picture1.jpg" alt="a picture of me">
         <h1 class="title">Hello, my name is <span class="name">Nabiil <span class='sub-name'>Alrilo Zhafran Tarigan</span></span></h1>
       </header>
       
@@ -15,13 +23,31 @@
       <script src="script.js"></script>
 
       <nav>
-        <h2 class="main-page-project">My Projects</h2>
+        <h2 id="main-page-project" class="main-page-project">My Projects</h2>
         <ul class="main-page-nav">
+          <h4 class="list-header">Grade 10 Term 3</h4>
+          <hr>
+          <div class="center">
           <ul class="term-3-nav">
-            <li><a href="biologi-geografi.html">Biologi - Geografi</a></li>
-            <li><a href="sejarah.html">Sejarah</a></li>
-          </ul>
-          <ul>
+            <li>
+              <div class="sejarah-ribbon">
+                <a href="biologi-geografi.html"><img src="pulau obi.jpg"></a>
+                <div class="sejarah-link">
+                  <a href="biologi-geografi.html">Biologi - Geografi</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="sejarah-ribbon">
+                <a href="sejarah.html"><img src="singhasari.jpg" alt=""></a>
+                <div class="sejarah-link">
+                  <a href="sejarah.html">Sejarah</a>
+                </div>
+              </div>
+            </li>
+           </ul>
+           </div>
+        <ul>
             <li>test</li>
           </ul>
         </ul>
