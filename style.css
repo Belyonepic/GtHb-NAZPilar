@@ -4,10 +4,24 @@
   box-sizing: border-box;
 }
 
-body{
+.index-body{
   padding: 0%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color:#1d1f30 ;
+  background-color:aliceblue ;
+  height: 2000px;
+  overflow: scroll;
+}
+.sejarah-body {
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:aliceblue ;
+  height: 2000px;
+  overflow: scroll;
+}
+.biologi-body {
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
   height: 2000px;
   overflow: scroll;
 }
@@ -61,7 +75,6 @@ hr {
 
 .main-page-project {
   color: #8dc45c;
-  background-color:#1d1f30;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -74,30 +87,63 @@ hr {
   color: #bad877;
 }
 
-.other-nav{
+.sejarah-nav{
   display: block;
   position: sticky;
   top: 0;
   z-index: 10;
   background-color:#5C6AC4;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+
 }
- .other-nav li {
-  margin: 0 20px;
+ .sejarah-nav li {
+  margin: 0 5px;
   color: #8dc45c;
+  list-style: none;
  }
- .other-nav li a {
+ .sejarah-nav li a {
   color: #8dc45c;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  text-decoration: none;
  }
-  .other-nav li a:hover {
+  .sejarah-nav li a:hover {
   color: #bad877;
  }
+ .biologi-nav{
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #5C6AC4;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2a);
+ }
+.biologi-nav li {
+    margin: 0 5px;
+    list-style: none;
+}
+.biologi-nav li a {
+  color: #8dc45c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.biologi-nav li a:hover {
+  color: #bad877;
+}
+
 
 
 .sejarah-header {
   color: #8dc45c;
   margin: 20px 0 0 20px;
+}
+.biologi-header {
+  color: #8dc45c;
+  margin: 20px 0 0 20px;
+  position: relative;
+  float: right;
+  text-align: right;
 }
 
 .profile-picture {
@@ -108,17 +154,6 @@ hr {
   overflow: hidden;
   box-shadow: 0 20px 20px rgba(0,0,0,0.2);
 }
- .poster {
-  display: block;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  max-width: 500px;
-}
-figcaption {
-  position: relative;
-}
-
 
 .what {
   margin: 25px 20px;
@@ -159,7 +194,7 @@ figcaption {
 }
 
 .sejarah-ribbon {
-  background-color:#2c3543 ;
+  background-color:#5C6AC4 ;
   width: 400px;
   padding: 10px;
   border-radius: 5px;
@@ -176,7 +211,10 @@ figcaption {
 }
 .sejarah-link {
   text-align: center;
+  margin-top: 7px;
   padding: 10px 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
 }
 .sejarah-link a{
   color:#8dc45c;
@@ -194,9 +232,9 @@ figcaption {
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px 40px 20px;
   z-index: 10;
-  background: linear-gradient(to bottom, #2c3543 60%, transparent);
+  background: linear-gradient(to bottom, #2c3543 40%, transparent);
 }
 .top-bar-nav{
   margin-left: auto;
@@ -225,4 +263,83 @@ figcaption {
   color: #8dc45c;
   font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
+}
+
+
+/* poster */
+.poster {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  max-width: 40%;
+  min-width: 200px;
+}
+.poster-text {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  top: 700px;
+  right: 67px;
+  max-width: 40%;
+  min-width: 200px;
+  color: #5C6AC4;
+}
+.poster:hover {
+  opacity: 70%;
+}
+.poster-content {
+  max-width: 60%;
+}
+
+/* obi board */
+.biologi-img-div {
+  opacity: 1;
+  display: flex;
+  position: sticky;
+  top: 90px;
+  margin-top: 20px;
+}
+.obi-board {
+  opacity: 1;
+  max-width: 40%;
+}
+.obi-board:hover {
+  opacity: 70%;
+}
+
+
+figcaption {
+  position: relative;
+
+}
+
+/*sejarah Table */
+.why-table-div {
+  width: 100%;
+  padding: 20px;
+}
+.why-table {
+  width: 100%;
+  border-collapse: collapse;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+th, td {
+  border:  1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #5C6AC4;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+  background-color: #bad877;
+}
+tr:hover {
+  background-color: #ddd;
 }
