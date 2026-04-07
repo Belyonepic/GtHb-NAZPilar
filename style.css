@@ -22,7 +22,7 @@
   padding: 0%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: aliceblue;
-  height: 2000px;
+  height: 1000px;
   overflow: scroll;
 }
 nav {
@@ -116,7 +116,7 @@ hr {
   top: 0;
   z-index: 10;
   background-color: #5C6AC4;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2a);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
  }
 .biologi-nav li {
     margin: 0 5px;
@@ -137,13 +137,12 @@ hr {
 .sejarah-header {
   color: #8dc45c;
   margin: 20px 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .biologi-header {
   color: #8dc45c;
   margin: 20px 0 0 20px;
-  position: relative;
-  float: right;
-  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .profile-picture {
@@ -232,9 +231,12 @@ hr {
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 10px 20px 40px 20px;
+  padding: 10px 20px;
   z-index: 10;
-  background: linear-gradient(to bottom, #2c3543 40%, transparent);
+  background-color:aliceblue;
+  border-bottom:5px solid #5C6AC4;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .top-bar-nav{
   margin-left: auto;
@@ -267,20 +269,23 @@ hr {
 
 
 /* poster */
+.poster-div {
+  display: flex;
+  position: sticky;
+  top: 70px;
+  float: right;
+  max-width: 40%;
+}
 .poster {
   opacity: 1;
-  display: block;
-  position: absolute;
-  top: 70px;
-  right: 0;
-  max-width: 40%;
+  max-width: 100%;
   min-width: 200px;
 }
 .poster-text {
   opacity: 1;
   display: block;
   position: absolute;
-  top: 700px;
+  top: 100%;
   right: 67px;
   max-width: 40%;
   min-width: 200px;
@@ -292,23 +297,6 @@ hr {
 .poster-content {
   max-width: 60%;
 }
-
-/* obi board */
-.biologi-img-div {
-  opacity: 1;
-  display: flex;
-  position: sticky;
-  top: 90px;
-  margin-top: 20px;
-}
-.obi-board {
-  opacity: 1;
-  max-width: 40%;
-}
-.obi-board:hover {
-  opacity: 70%;
-}
-
 
 figcaption {
   position: relative;
@@ -342,4 +330,82 @@ tr:nth-child(odd) {
 }
 tr:hover {
   background-color: #ddd;
+}
+
+
+/* Obi Board */
+.biologi-img-div {
+  opacity: 1;
+  display: flex;
+  position: sticky;
+  top: 90px;
+  margin-top: 20px;
+}
+.obi-board {
+  opacity: 1;
+  max-width: 170%;
+  margin-left: -37%;
+}
+.obi-board:hover {
+  opacity: 0.7;
+}
+
+.obi-board-content {
+  min-height: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.obi-decor-left h4{
+  color: #8dc45c;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  left: 25%;
+}
+.obi-decor-right h4{
+  color: #8dc45c;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  left: 40%;
+}
+.obi-decor-left{
+  position: relative;
+  height: 400px;
+  flex: 1;
+}
+.obi-decor-what {
+  position: absolute;
+  top: 15%;
+}
+.obi-decor-where {
+  position: absolute;
+  top: 44%;
+}
+.obi-decor-when {
+  position: absolute;
+  top: 80%;
+}
+.obi-decor-center {
+  flex: 1;
+}
+.obi-decor-center img {
+  background-color: transparent;
+}
+.obi-decor-right {
+  position: relative;
+  height: 400px;
+  flex: 1;
+}
+.obi-decor-who{
+  position: absolute;
+  top: 15%;
+}
+.obi-decor-why{
+  position: absolute;
+  top: 44%;
+}
+.obi-decor-how{
+  position: absolute;
+  top: 80%;
 }
