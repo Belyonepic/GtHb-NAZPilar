@@ -2,483 +2,649 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  }
+
+.index-body {
+padding: 0%;
+font-family: Arial, Helvetica, sans-serif;
+background-color: aliceblue;
+height: 2000px;
+overflow: scroll;
 }
 
-.index-body{
-  padding: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:aliceblue ;
-  height: 2000px;
-  overflow: scroll;
-}
 .sejarah-body {
-  padding: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:aliceblue ;
-  height: 2000px;
-  overflow: scroll;
+padding: 0%;
+font-family: Arial, Helvetica, sans-serif;
+background-color: aliceblue;
+height: 2000px;
+overflow: scroll;
 }
+
 .biologi-body {
-  padding: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: aliceblue;
-  height: 1500px;
-  overflow: scroll;
+padding: 0%;
+font-family: Arial, Helvetica, sans-serif;
+background-color: aliceblue;
+height: 1500px;
+overflow: scroll;
 }
+
+/* Navigation */
+
 nav {
-  display: block;
-  width: 100%;
-  padding: 20px;
+display: block;
+width: 100%;
+padding: 20px;
 }
-header{
-  margin: 20px;
+
+header {
+margin: 20px;
 }
+
+/* Project term sections */
+
+.term-section {
+width: 100%;
+}
+
+/* Centers the projects within each term */
 
 .center {
-  display: flex;
-  justify-content: center;
-  margin: 25px 20px;
+display: flex;
+justify-content: center;
+margin: 25px 20px;
 }
 
+/* Titles */
+
 .title {
-	color: #5C6AC4;
-  font-family: Arial, Helvetica, sans-serif;
+color: #ec244c;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .name {
-    color: #8dc45c;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
+color: #c0e43c;
+display: block;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .sub-name {
-  font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-    transition: font-family 2s;
+font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+transition: font-family 2s;
 }
 
 span:hover .sub-name {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-strong {
-  color: #bad877;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+strong {
+color: #c0e43c;
+}
+
+/* Horizontal lines */
+
 hr {
-  border: 2px dashed #5C6AC4;
-  margin-top: 20px;
+border: 2px dashed #ec244c;
+margin-top: 20px;
 }
 
 .currentTime {
-  color: #8dc45c;
+color: #e5db24;
 }
+
+/* Main project title */
 
 .main-page-project {
-  color: #8dc45c;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  padding: 20px;
-  margin: auto;
-  max-width: 500px;
+color: #e5db24;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 30px;
+padding: 20px;
+margin: auto;
+max-width: 500px;
 }
+
 .main-page-project:hover {
-  color: #bad877;
+color: #c0e43c;
 }
 
-.sejarah-nav{
-  display: block;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color:#5C6AC4;
-  box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+/* Sejarah navigation */
 
+.sejarah-nav {
+display: block;
+position: sticky;
+top: 0;
+z-index: 10;
+background-color: #ec244c;
+box-shadow: 0 5px 8px rgba(0,0,0,0.2);
 }
- .sejarah-nav li {
-  margin: 0 5px;
-  color: #8dc45c;
-  list-style: none;
- }
- .sejarah-nav li a {
-  color: #8dc45c;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
- }
-  .sejarah-nav li a:hover {
-  color: #bad877;
- }
- .biologi-nav{
-  display: block;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #5C6AC4;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
- }
+
+.sejarah-nav li {
+margin: 0 5px;
+color: #e5db24;
+list-style: none;
+}
+
+.sejarah-nav li a {
+color: #e5db24;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+text-decoration: none;
+}
+
+.sejarah-nav li a:hover {
+color: #c0e43c;
+}
+
+/* Biologi navigation */
+
+.biologi-nav {
+display: block;
+position: sticky;
+top: 0;
+z-index: 10;
+background-color: #ec244c;
+box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
 .biologi-nav li {
-    margin: 0 5px;
-    list-style: none;
+margin: 0 5px;
+list-style: none;
 }
+
 .biologi-nav li a {
-  color: #8dc45c;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
+color: #e5db24;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+text-decoration: none;
 }
+
 .biologi-nav li a:hover {
-  color: #bad877;
+color: #c0e43c;
 }
 
-
+/* Page headers */
 
 .sejarah-header {
-  color: #8dc45c;
-  margin: 20px 0 0 20px;
-  font-family: Arial, Helvetica, sans-serif;
+color: #e5db24;
+margin: 20px 0 0 20px;
+font-family: Arial, Helvetica, sans-serif;
 }
+
 .biologi-header {
-  color: #8dc45c;
-  margin: 20px 0 0 20px;
-  font-family: Arial, Helvetica, sans-serif;
+color: #e5db24;
+margin: 20px 0 0 20px;
+font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Profile picture */
 
 .profile-picture {
-  border: 15px groove #8dc45c;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 20px 0px 0 0;
-  overflow: hidden;
-  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+border: 15px groove #e5db24;
+border-radius: 50%;
+padding: 10px;
+margin: 20px 0px 0 0;
+overflow: hidden;
+box-shadow: 0 20px 20px rgba(0,0,0,0.2);
 }
 
+/* What / Why */
+
 .what {
-  margin: 25px 20px;
+margin: 25px 20px;
 }
-.what p{
-  color: #8dc45c;
-  font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.what p {
+color: #e5db24;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .why {
-  margin: 25px 20px;
+margin: 25px 20px;
 }
-.why p{
-  color: #8dc45c;
-  font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  max-width: 700px;
+
+.why p {
+color: #e5db24;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+max-width: 700px;
 }
+
+/* Term headings */
 
 .list-header {
-  color: #bad877;
-  font-size: 30px;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-  font-weight: bold;
-  margin: 20px 0 0 15px;
+color: #c0e43c;
+font-size: 30px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+sans-serif;
+font-weight: bold;
+margin: 20px 0 0 15px;
 }
 
-/*ribbon */
-.term-3-nav {
-  display: flex;
-  gap: 20px;
-  list-style-type: none;
-  padding: 0;
-}
-.term-3-nav li {
-  list-style: none;
+/* Project ribbons */
+
+.term-10-3-nav {
+display: flex;
+gap: 20px;
+list-style-type: none;
+padding: 0;
 }
 
-.sejarah-ribbon {
-  background-color:#5C6AC4 ;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.term-10-3-nav li {
+list-style: none;
 }
-.sejarah-ribbon img{
-  opacity: 100%;
-  width: 100%;
-  border-radius: 5px;
-  transform: width 2s;
+
+/* Grade 11 projects */
+
+.term-11-1-nav {
+display: flex;
+gap: 20px;
+list-style-type: none;
+padding: 0;
 }
-.sejarah-ribbon img:hover {
-  opacity: 70%;
+
+.term-11-1-nav li {
+list-style: none;
 }
+
+/* Sejarah ribbon */
+
+.project-ribbon {
+background-color: #ec244c;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+box-shadow:
+0 4px 8px 0 rgba(0, 0, 0, 0.2),
+0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-ribbon img {
+opacity: 100%;
+width: 100%;
+border-radius: 5px;
+transform: width 2s;
+}
+
+.project-ribbon img:hover {
+opacity: 70%;
+}
+
+/* Sejarah link */
+
 .sejarah-link {
-  text-align: center;
-  margin-top: 7px;
-  padding: 10px 20px;
-  background-color: aliceblue;
-  border-radius: 5px;
+text-align: center;
+margin-top: 7px;
+padding: 10px 20px;
+background-color: aliceblue;
+border-radius: 5px;
 }
+
+.sejarah-link a {
+color: #e5db24;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+text-decoration: none;
+}
+
+.sejarah-link a:hover {
+color: #c0e43c;
+}
+
+/* Self reflection ribbon */
+
 .self-reflection-ribbon {
-  background-color:#5C6AC4 ;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color: #ec244c;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+box-shadow:
+0 4px 8px 0 rgba(0, 0, 0, 0.2),
+0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.self-reflection-ribbon img{
-  opacity: 100%;
-  width: 100%;
-  border-radius: 5px;
-  transform: width 2s;
+
+.self-reflection-ribbon img {
+opacity: 100%;
+width: 100%;
+border-radius: 5px;
+transform: width 2s;
 }
+
 .self-reflection-ribbon img:hover {
-  opacity: 70%;
+opacity: 70%;
 }
+
+/* Self reflection link */
+
 .self-reflection-link {
-  text-align: center;
-  margin-top: 7px;
-  padding: 10px 20px;
-  background-color: aliceblue;
-  border-radius: 5px;
-}
-.self-reflection-link a{
-  color:#8dc45c;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  text-decoration:none ;
-}
-.sejarah-link a{
-  color:#8dc45c;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  text-decoration:none ;
-}
-.sejarah-link a:hover{
-  color:#bad877;
-}
-.self-reflection-link a:hover{
-  color: #bad877;
+text-align: center;
+margin-top: 7px;
+padding: 10px 20px;
+background-color: aliceblue;
+border-radius: 5px;
 }
 
-/* top bar */
+.self-reflection-link a {
+color: #e5db24;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+text-decoration: none;
+}
+
+.self-reflection-link a:hover {
+color: #c0e43c;
+}
+
+/* Top bar */
+
 .top-bar {
-  display: flex;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 10px 20px;
-  z-index: 10;
-  background-color:aliceblue;
-  border-bottom:5px solid #5C6AC4;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-  font-family: Arial, Helvetica, sans-serif;
+display: flex;
+position: sticky;
+top: 0;
+width: 100%;
+padding: 10px 20px;
+z-index: 10;
+background-color: #ec244c;
+border-bottom: 5px solid #ec244c;
+box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+font-family: Arial, Helvetica, sans-serif;
 }
-.top-bar-nav{
-  margin-left: auto;
-  margin-top: 5px;
+
+.top-bar-nav {
+margin-left: auto;
+margin-top: 5px;
 }
-.top-bar-ul{
-  display: flex;
-  gap: 20px;
-  list-style-type: none;
-  padding: 0;
+
+.top-bar-ul {
+display: flex;
+gap: 20px;
+list-style-type: none;
+padding: 0;
 }
-.top-bar-ul li{
-  list-style: none;
-  margin: 0 20px;
-  padding: 0 20px;
+
+.top-bar-ul li {
+list-style: none;
+margin: 0 20px;
+padding: 0 20px;
 }
-.top-bar-ul li a{
-  color: #8dc45c;
-  text-decoration: none;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
+.top-bar-ul li a {
+color: #e5db24;
+text-decoration: none;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+sans-serif;
 }
-.top-bar-ul li a:hover{
-  color:#bad877 ;
+
+.top-bar-ul li a:hover {
+color: #c0e43c;
 }
+
 .main-title {
-  color: #8dc45c;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
+color: #f9f9f9;
+font-family: Arial, Helvetica, sans-serif;
+font-size: xx-large;
 }
 
+/* Poster */
 
-/* poster */
 .poster-div {
-  display: flex;
-  position: sticky;
-  top: 70px;
-  float: right;
-  max-width: 40%;
+display: flex;
+position: sticky;
+top: 70px;
+float: right;
+max-width: 40%;
 }
+
 .poster {
-  opacity: 1;
-  max-width: 100%;
-  min-width: 200px;
+opacity: 1;
+max-width: 100%;
+min-width: 200px;
 }
+
 .poster-text {
-  opacity: 1;
-  display: block;
-  position: absolute;
-  top: 100%;
-  right: 67px;
-  max-width: 40%;
-  min-width: 200px;
-  color: #5C6AC4;
+opacity: 1;
+display: block;
+position: absolute;
+top: 100%;
+right: 67px;
+max-width: 40%;
+min-width: 200px;
+color: #ec244c;
 }
+
 .poster:hover {
-  opacity: 70%;
+opacity: 70%;
 }
+
 .poster-content {
-  max-width: 60%;
+max-width: 60%;
 }
 
 figcaption {
-  position: relative;
-
+position: relative;
 }
 
-/*sejarah Table */
+/* Sejarah Table */
+
 .why-table-div {
-  width: 100%;
-  padding: 20px;
-}
-.why-table {
-  width: 100%;
-  border-collapse: collapse;
-    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
-}
-th, td {
-  border:  1px solid #ccc;
-  padding: 10px;
-  text-align: left;
-}
-th {
-  background-color: #5C6AC4;
-  color: white;
-}
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-tr:nth-child(odd) {
-  background-color: #bad877;
-}
-tr:hover {
-  background-color: #ddd;
+width: 100%;
+padding: 20px;
 }
 
+.why-table {
+width: 100%;
+border-collapse: collapse;
+box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+
+th,
+td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: left;
+}
+
+th {
+background-color: #ec224b;
+color: white;
+}
+
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+background-color: #c0e43c;
+}
+
+tr:hover {
+background-color: #ddd;
+}
 
 /* Obi Board */
+
 .biologi-img-div {
-  opacity: 1;
-  display: flex;
-  position: sticky;
-  top: 90px;
-  margin-top: 20px;
+opacity: 1;
+display: flex;
+position: sticky;
+top: 90px;
+margin-top: 20px;
 }
+
 .obi-board {
-  opacity: 1;
-  max-width: 170%;
-  margin-left: -37%;
+opacity: 1;
+max-width: 170%;
+margin-left: -37%;
 }
+
 .obi-board:hover {
-  opacity: 0.7;
+opacity: 0.7;
 }
 
 .obi-board-content {
-  min-height: 700px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+min-height: 700px;
+display: flex;
+flex-direction: row;
+align-items: center;
 }
 
-.obi-decor-left h4{
-  color: #8dc45c;
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  left: 25%;
+.obi-decor-left h4 {
+color: #e5db24;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+left: 25%;
 }
-.obi-decor-right h4{
-  color: #8dc45c;
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  left: 40%;
+
+.obi-decor-right h4 {
+color: #e5db24;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+left: 40%;
 }
-.obi-decor-left{
-  position: relative;
-  height: 400px;
-  flex: 1;
+
+.obi-decor-left {
+position: relative;
+height: 400px;
+flex: 1;
 }
+
 .obi-decor-what {
-  position: absolute;
-  top: 15%;
+position: absolute;
+top: 15%;
 }
+
 .obi-decor-where {
-  position: absolute;
-  top: 44%;
+position: absolute;
+top: 44%;
 }
+
 .obi-decor-when {
-  position: absolute;
-  top: 80%;
+position: absolute;
+top: 80%;
 }
+
 .obi-decor-center {
-  flex: 1;
+flex: 1;
 }
+
 .obi-decor-center img {
-  background-color: transparent;
+background-color: transparent;
 }
+
 .obi-decor-right {
-  position: relative;
-  height: 400px;
-  flex: 1;
+position: relative;
+height: 400px;
+flex: 1;
 }
-.obi-decor-who{
-  position: absolute;
-  top: 15%;
+
+.obi-decor-who {
+position: absolute;
+top: 15%;
 }
-.obi-decor-why{
-  position: absolute;
-  top: 44%;
+
+.obi-decor-why {
+position: absolute;
+top: 44%;
 }
-.obi-decor-how{
-  position: absolute;
-  top: 80%;
+
+.obi-decor-how {
+position: absolute;
+top: 80%;
 }
+
+/* Obi explanation */
 
 .obi-explanation {
-  display: flex;
-}
-.obi-explanation-left, .obi-explanation-right {
-  flex: 1;
-}
-.obi-explanation-right img {
-  width: 100%;
-  display: flex;
-  position: sticky;
-  top: 10%;
+display: flex;
 }
 
+.obi-explanation-left,
+.obi-explanation-right {
+flex: 1;
+}
+
+.obi-explanation-right img {
+width: 100%;
+display: flex;
+position: sticky;
+top: 10%;
+}
 
 .obi-explanation-table-div {
-  width: 100%;
-  padding: 20px;
+width: 100%;
+padding: 20px;
 }
 
 .obi-explanation-table {
-  width: 100%;
-  border-collapse: collapse;
-    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+width: 100%;
+border-collapse: collapse;
+box-shadow: 0 20px 20px rgba(0,0,0,0.2);
 }
 
 .obi-explanation-what {
-  margin: 25px 20px;
-}
-.obi-explanation-what a, .obi-explanation-what p{
-  color: #8dc45c;
-  font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 25px 20px;
 }
 
-.self-reflection-list {
- list-style: none; 
+.obi-explanation-what a,
+.obi-explanation-what p {
+color: #e5db24;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+'Trebuchet MS', sans-serif;
 }
+
+/* Self reflection list */
+
+.self-reflection-list {
+list-style: none;
+}
+
 .self-reflection-list li {
-  padding: 5px 0;
+padding: 5px 0;
+}
+
+
+/* Biologi xi */
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.slideshow img {
+  width: 500px;
+  height: 300px;
+  object-fit: contain;
+}
+.slideshow button {
+  background: none;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 50px;
+
+}
+.slideshow button:hover {
+  filter: grayscale(0.5);
+}
+
+.biologi-xi-explanation-div {
+  width: 70%;
+}
+.biologi-xi-explanation-div p {
+  font-size: 25px;
+  padding: 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 5px rgba(90, 89, 89, 0.2);
+}
+.biologi-xi-explanation-div ul {
+  padding: 10px;
+  margin-left: 20px;
+}
+.biologi-xi-explanation-div ul p {
+  padding: 0;
 }

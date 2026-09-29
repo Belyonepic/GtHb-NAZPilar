@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    margin: 20px;
+}
+
+.biologi-body {
+padding: 0%;
+font-family: Arial, Helvetica, sans-serif;
+background-color: aliceblue;
+height: 1500px;
+overflow: scroll;
+}
+
+/* Biologi Navigation */
+.biologi-nav {
+display: block;
+position: sticky;
+top: 0;
+z-index: 10;
+background-color: #5C6AC4;
+box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.biologi-nav li {
+margin: 0 5px;
+list-style: none;
+}
+
+.biologi-nav li a {
+color: #8dc45c;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+text-decoration: none;
+}
+
+.biologi-nav li a:hover {
+color: #bad877;
+}
