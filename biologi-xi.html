@@ -17,12 +17,17 @@
     <hr>
     <main>
       <div class="slideshow">
-        <button  style="background-image: url(imgs/buttons/button-left.svg);"></button>
-        <img src="imgs/biologi-xi-slides/slide-1.png" alt="Slide">
-        <button  style="background-image: url(imgs/buttons/button-right.svg);"></button>
-      </div>
+    <div class="canva-container">
+        <iframe
+            loading="lazy"
+            src="https://www.canva.com/design/DAHSzOrtvTk/oWHdGTni9OZh_KXlto9H3Q/view?embed"
+            allowfullscreen
+            allow="fullscreen">
+        </iframe>
+    </div>
+</div>
       <hr>
-      <div style="color: #e5db24;padding: 20px; width: 70%;" class="biologi-xi-explanation-div">
+      <div style="color: #e5db24;padding: 20px;" class="biologi-xi-explanation-div">
         <p>This is a <strong>biology</strong> experiment about the digestive system topic, although we got to learn the other systems aswell</p>
         <p>I did this project along with my other friends : </p>
         <ul>
@@ -32,42 +37,12 @@
           <li><p>Owen</p></li>
           <li><p>Rifat</p></li>
         </ul>
+        <hr>
+        <h2>Process</h2>
+        <p>First, we anesthetized the rat with eter alcohol, then each one of us took turn in dissecting the rat. One of us even accidentally punctured the heart of the rat, so when it's time to analyze the inner organs, the heart wasn't there.</p>
       </div>
     </main>
 
-    <script>
-const images = [
-    "imgs/biologi-xi-slides/slide-1.png",
-    "imgs/biologi-xi-slides/slide-2.png",
-    "imgs/biologi-xi-slides/slide-3.png",
-    "imgs/biologi-xi-slides/slide-4.png",
-    "imgs/biologi-xi-slides/slide-5.png",
-    "imgs/biologi-xi-slides/slide-6.png",
-    "imgs/biologi-xi-slides/slide-7.png",
-    "imgs/biologi-xi-slides/slide-8.png",
-    "imgs/biologi-xi-slides/slide-9.png",
-    "imgs/biologi-xi-slides/slide-10.png",
-    "imgs/biologi-xi-slides/slide-11.png"
-];
-
-let currentImage = 0;
-
-const slide = document.querySelector(".slideshow img");
-const buttons = document.querySelectorAll(".slideshow button");
-
-buttons[0].addEventListener("click", () => {
-    if (currentImage > 0) {
-        currentImage--;
-        slide.src = images[currentImage];
-    }
-});
-
-buttons[1].addEventListener("click", () => {
-    if (currentImage < images.length - 1) {
-        currentImage++;
-        slide.src = images[currentImage];
-    }
-});
-</script>
+    <script></script>
   </body>
 </html>

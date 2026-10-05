@@ -3,6 +3,14 @@
   <head>
     <title>Project Matwa</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body class="biologi-body">
     <nav class="biologi-nav">
@@ -47,6 +55,101 @@
                   <p>Dilation</p>
                 </div>
             </div>
+        </div>
+        <p>For this project, I made batik patterns on a math graphing system, in this case Geogebra. I made the batik pattern with math equations to create shapes such as ellipses and other polygon. and used geometric transformation to arrange them.</p>
+
+        <!-- explanation -->
+        <hr>
+        <div class="seven-habits">
+          <p>I think this project correlates with one of the seven habits of highly effective people.</p>
+          <p>Specifically, habit number <span>2</span>; "Begin with the end in mind", as I need to clearly define and plan how the batik would turn out and how to achive that pattern ahead of time.</p>
+        </div>
+        <hr>
+
+        <h1 style="padding: 10px;">Process</h1>
+
+        <div class="gt-process-explanation">
+          <div class="gt-process-explanation-div">
+            <div class="flex-one">
+              <h2><strong>Step 1</strong></h2>
+              <p>First, I made an ellipse using the ellipse equation :  \(\frac{x^2}{a} + \frac{y^2}{b} = c\)</p>
+              <p>I used \(\frac{x^2}{3} + \frac{y^2}{1} = 1\) to make -></p>
+            </div>
+            <div class="flex-two">
+              <img src="imgs/gt-graphs/one.png">
+            </div>
+          </div>
+
+          <div class="gt-process-explanation-div">
+            <div class="flex-one">
+              <h2><strong>Step 2</strong></h2>
+              <p>Next, I <Strong>Rotated</Strong> it \(45^\circ\) counterclockwise and <Strong>Translated</Strong> it to \(-1.7\) in the x axis and \(1.7\) in the y axis</p>
+              <p>the matrix equivalent to the rotation would be :</p>
+              $$
+              \begin{pmatrix}
+              cos(45) & -sin(45)\\
+              sin(45) & cos(45)
+              \end{pmatrix}
+              =
+              \begin{pmatrix}
+              \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\
+              \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+              \end{pmatrix}
+              $$
+              <p>and the matrix equivalent to the translation would be :</p>
+              $$
+              \begin{pmatrix}
+              -1.7 \\
+              1.7
+              \end{pmatrix}
+              $$
+            </div>
+            <div class="flex-two">
+              <img src="imgs/gt-graphs/two.png">
+            </div>
+          </div>
+
+          <div class="gt-process-explanation-div">
+            <div class="flex-one">
+              <h2><strong>Step 3</strong></h2>
+              <p>Let's call that object e1 (ellipse 1). I made anoter object that is the reflection of p1 according to the line : \(x = 0\) , which would be a straight vertical line going through the y axis.</p>
+              <p>I called this object e2 and now, our project looks like this : </p>
+              <p>With a few more rotation and/or reflection, we will have four ellipses as such : </p>
+            </div>
+            <div class="flex-two">
+              <img src="imgs/gt-graphs/three.png">
+              <img src="imgs/gt-graphs/four.png" style="margin-top: 10px;"> 
+            </div>
+          </div>
+
+          <div class="gt-process-explanation-div">
+            <div class="flex-one">
+              <h2><Strong>Step 4</Strong></h2>
+              <p>I then made a circle using the equation : \(x^2 + y^2 = 1\).</p>
+              <p>I think it's too big though, so I dilated it with a dilation factor of \(\sqrt{0.2}\)</p>
+            </div>
+            <div class="flex-two">
+              <img src="imgs/gt-graphs/five.png">
+            </div>
+          </div>
+
+          <div class="gt-process-explanation-div">
+            <div class="flex-one">
+              <h2><strong>step 5</strong></h2>
+              <p>After that, I made a line segment from point \((0.3, 0.3)\) to point \((1, 1)\). </p>
+              <p>I made 3 other objects from rotation, then i got this : </p>
+            </div>
+            <div class="flex-two">
+              <img src="imgs/gt-graphs/six.png">
+            </div>
+          </div>
+
+          <div class="gt-process-explanation">
+            <div class="flex-one">
+              <h2><strong>Step 6</strong></h2>
+              <p>To finish off the main shape, I added this quadrilaterals in the shape of diamonds.</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>

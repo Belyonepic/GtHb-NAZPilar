@@ -615,28 +615,28 @@ padding: 5px 0;
 
 /* Biologi xi */
 .slideshow {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 15px;
 }
-.slideshow img {
-  width: 500px;
-  height: 300px;
-  object-fit: contain;
+
+.canva-container {
+  position: relative;
+  width: 70%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
 }
-.slideshow button {
-  background: none;
+
+.canva-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   border: none;
-  font-size: 50px;
-  cursor: pointer;
-  padding: 50px;
-
 }
-.slideshow button:hover {
-  filter: grayscale(0.5);
-}
-
 .biologi-xi-explanation-div {
 
 }
@@ -676,4 +676,31 @@ padding: 5px 0;
   border-radius: 10px;
   background-color: aliceblue;
   text-align: center;
+}
+.gt-process-explanation {
+
+}
+.gt-process-explanation-div {
+  padding: 10px 0;
+  display: flex;
+}
+.gt-process-explanation-div .flex-one {
+  width: 70%;
+}
+.gt-process-explanation-div h2 {
+  padding-left: 10px;
+}
+.gt-process-explanation-div .flex-two {
+  width: 20%;
+}
+.gt-process-explanation-div .flex-two img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* seven habits */
+.seven-habits span {
+  font-size: 15vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
