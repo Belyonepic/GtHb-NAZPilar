@@ -343,6 +343,13 @@ text-decoration: none;
 color: #c0e43c;
 }
 
+.self-reflection-image{
+  margin-left: 25%;
+}
+.self-reflection-image img {
+  width: 800px;
+}
+
 /* Top bar */
 
 .top-bar {
@@ -703,4 +710,31 @@ padding: 5px 0;
 .seven-habits span {
   font-size: 15vh;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* DEAR */
+.dear-layout{
+  display: flex;
+}
+.dear-flex1{
+  flex: 0 0 60%;
+  padding: 20px;
+  color: #e5db24;
+}
+.dear-flex2 {
+  flex: 0 0 40%;
+}
+
+.dear-layout h1 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10vh;
+}
+
+.dear-flex1 p {
+  padding-top: 20px;
+  font-size: x-large;
+}
+.dear-extra{
+  position:absolute;
+  right: 50px;
 }
